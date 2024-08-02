@@ -1,0 +1,100 @@
+.all-modal-main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.main-modal-card {
+  background-color: beige;
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cross-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cross-card > :nth-child(2) {
+  cursor: pointer;
+}
+
+.distance-increase-card-main {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.distance-increase-card-main > div {
+  width: 15%;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.distance-increase-card-main > div > span {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.distance-increase-card-main > div > :nth-child(1) {
+  background-color: red;
+  height: 100%;
+  font-size: 25px;
+}
+
+.distance-increase-card-main > div > :nth-child(2) {
+  font-size: 18px;
+  height: 100%;
+}
+
+.distance-increase-card-main > div > :nth-child(3) {
+  background-color: green;
+  height: 100%;
+  font-size: 25px;
+}
+
+.blood-bank-details-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 360px;
+  overflow-y: scroll;
+}
+
+.single-card-blood-bank-modal {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* border: 1px solid grey; */
+  background-color: #fff;
+  border-radius: 10px;
+  height: fit-content;
+  width: 400px;
+  height: 180px;
+}
+
+.single-card-blood-bank-modal > span {
+  font-weight: 600;
+  font-size: 18px;
+}

@@ -1,0 +1,113 @@
+.new-initial-screen {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* border: 2px solid red; */
+}
+
+.new-lohin-form-main-card {
+  width: 80%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid red; */
+}
+
+.new-lohin-form-main-card > img {
+  width: 50%;
+  height: 100%;
+}
+
+.new-initial-form-card {
+  /* border: 2px solid red; */
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.new-initial-form-card > h2 {
+  color: #3c72a0;
+}
+.new-initial-form-card > p {
+  color: #3c71a09c;
+  font-size: 20px;
+}
+
+.new-initial-form-card > div {
+  border: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 40px;
+  border-radius: 30px;
+  padding: 15px;
+  gap: 0.8rem;
+}
+
+.new-initial-form-card > div > input {
+  width: 90%;
+  height: 38px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.new-initial-form-card > button {
+  width: 160px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #3c72a0;
+  color: #fff;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .new-initial-screen {
+    padding: 5px;
+    height: 70vh;
+  }
+  .new-lohin-form-main-card {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    /* box-shadow: none; */
+    width: 80%;
+    padding: 10px;
+    margin-top: 30px;
+    /* border: 2px solid yellow; */
+  }
+  .new-lohin-form-main-card > img {
+    display: none;
+  }
+  .new-initial-form-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* padding: 10px; */
+  }
+  .new-initial-form-card > p {
+    font-size: 4vw;
+  }
+  .new-initial-form-card > div {
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+}

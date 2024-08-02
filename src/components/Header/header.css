@@ -1,0 +1,139 @@
+.header_main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+  z-index: 10;
+  background-color: #f7f7f7;
+}
+
+.link-change {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: large;
+}
+.nuhvin-blood-bank-header {
+  width: max-content;
+  /* border: 2px solid red; */
+  letter-spacing: 2;
+}
+
+.nuhvin-card {
+  width: min-content;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.nuhvin-card .nuhvin-blood-bank-header {
+  width: max-content;
+}
+
+.mobile-header-container-card {
+  display: flex;
+}
+
+.header-inside-card {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-inside-card > span {
+  width: max-content;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-inside-card > button {
+  border: 2px solid var(--main-text-color);
+  outline: none;
+  width: 100px;
+  height: 35px;
+  /* background-color: var(--main-text-color); */
+  color: var(--main-text-color);
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mobile-header-card {
+  display: none;
+}
+.log-out-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 1114px) {
+  .header_main {
+    width: 100%;
+    /* position: relative; */
+  }
+  .nuhvin-card {
+    display: none;
+  }
+  .header-inside-card {
+    display: none;
+  }
+
+  .mobile-header-card {
+    display: block;
+    display: flex;
+    gap: 4rem;
+    /* background-color: red; */
+  }
+  .nuhvin-blood-bank-header {
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: 2px solid red;
+  }
+  .nuhvin-blood-bank-header > h3 {
+    font-size: 15px;
+    width: 100%;
+  }
+  .mobile-links-card {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* height: 300px; */
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 111;
+    padding: 30px;
+    align-items: flex-start;
+  }
+  .mobile-links-card > span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .mobile-links-card > button {
+    border: 2px solid white;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    /* background-color: var(--main-text-color); */
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    font-weight: bold;
+  }
+}
+
+.active {
+  color: var(--main-text-color);
+}

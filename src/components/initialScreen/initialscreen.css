@@ -1,0 +1,161 @@
+.initial-screen-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+
+  /* padding-bottom: 20px !important;
+  border-bottom: 2px solid var(--main-text-color); */
+}
+
+.initial-screen-second-card {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  height: 80vh;
+  margin-top: 1.5rem;
+}
+
+.initial-left-side-card {
+  width: 50%;
+  height: 100%;
+}
+
+.single-slider {
+  height: 92%;
+  box-shadow: 0px 0px 8px rgb(from var(--main-text-color) r g b / 50%);
+  border-radius: 8px;
+}
+.single-slider div {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.single-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+/* right-side */
+
+.initail-right-side-card {
+  width: 50%;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.initial-registor-main-screen {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  /* border: 2px solid red; */
+  height: 92%;
+}
+
+.initial-singup-tabs-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.initial-singup-tabs-card > span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.initial-singup-tabs-card span:hover {
+  cursor: pointer;
+}
+
+
+
+.RegisterUser,
+.RegisterBloodBank {
+  padding: 0.75rem 2rem;
+  width: 224px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.65rem;
+  color: var(--main-text-color);
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.RegisterUser.active {
+  background-color: rgb(from var(--main-text-color) r g b / 100%);
+}
+
+.RegisterBloodBank.active {
+  background-color: rgb(from var(--main-text-color) r g b / 100%);
+}
+
+.RegisterUser.active,
+.RegisterBloodBank.active {
+  color: #fff;
+  z-index: 1;
+  transition: 500ms;
+  font-size: 14px;
+}
+
+.initial-singup-tabs-cards {
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.5);
+  padding: 0.2rem !important;
+  border-radius: 0.75rem;
+  position: relative;
+  display: flex;
+  width: max-content;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-self: center;
+  overflow: hidden;
+}
+
+/* .singup-tabs-cards-anime-background {
+  display: none;
+} */
+
+@media (max-width: 768px) {
+  .initial-screen-second-card {
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+
+  }
+  .initial-left-side-card {
+    width: 94%;
+    height: 40vh;
+    overflow: visible;
+    position: relative;
+    left: 20px ;
+  }
+
+  .initail-right-side-card {
+    width: 120%;
+    height: 100%;
+  }
+
+  .initial-singup-tabs-cards {
+    display: flex;
+    flex-direction: column ;
+
+  }
+
+  .RegisterUser,
+  .RegisterBloodBank {
+    border-radius: 0.65rem !important;
+    font-size: 12px !important;
+    font-weight: 600;
+    height: max-content;
+    width : 320px ;
+  }
+}

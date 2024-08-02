@@ -1,0 +1,45 @@
+.not-found-main {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  height: 70vh;
+  display: flex;
+}
+
+.first-not-found-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+  flex-direction: column;
+  line-height: 1.3;
+  padding: 20px;
+}
+.first-not-found-card > button {
+  padding: 10px;
+  background-color: var(--main-text-color);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.second-not-found-card {
+  width: 60%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .second-not-found-card {
+    display: none;
+  }
+}

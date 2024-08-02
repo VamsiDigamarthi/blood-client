@@ -1,0 +1,20 @@
+.mal-femail-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.mal-fem-main-card {
+  width: 100%;
+}
+
+.mal-femail-cards > div {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

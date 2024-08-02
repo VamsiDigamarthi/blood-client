@@ -1,0 +1,90 @@
+.what-we-do {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  height: 450px;
+  /* border: 2px solid red; */
+  margin-top: 30px;
+}
+
+.what-we-do > h1 {
+  color: var(--main-text-color);
+  width: fit-content;
+  border-bottom: 2px solid var(--main-text-color);
+}
+
+.waht-inner-card {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 80%;
+  padding: 40px;
+  gap: 2rem;
+  /* border: 3px solid yellow; */
+}
+
+.waht-inner-card > :nth-child(1) {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+.what-dosecond-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.what-dosecond-card > h1 {
+  color: var(--main-text-color);
+}
+
+.what-dosecond-card > p {
+  line-height: 1.4rem;
+  color: var(--sub-para-color);
+}
+
+.what-dosecond-card > div {
+  width: 200px;
+  background-color: var(--main-text-color);
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  color: #fff;
+}
+
+.what-dosecond-card > div > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .what-we-do {
+    height: fit-content;
+  }
+  .waht-inner-card {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    height: fit-content;
+  }
+  .waht-inner-card > :nth-child(1) {
+    width: 100%;
+  }
+  .what-dosecond-card {
+    width: 100%;
+  }
+  .what-dosecond-card > p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}

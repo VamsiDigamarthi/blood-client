@@ -1,0 +1,94 @@
+.app-display-main {
+  width: 100%;
+  display: flex;
+  /* gap: 1rem; */
+  align-items: center;
+  height: 300px;
+  margin-top: 40px;
+}
+
+.app-display-left {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  /* background-color: rgba(165, 42, 42, 0.479); */
+}
+
+.app-display-left > h2 {
+  color: var(--main-text-color);
+  font-size: 45px;
+}
+.app-display-left > p {
+  color: var(--sub-para-color);
+  font-size: 20px;
+}
+
+.app-display-btn-card {
+  width: 70%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-display-btn-card > button {
+  width: 170px;
+  height: 40px;
+  outline: none;
+  font-size: 17px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.app-display-btn-card > :nth-child(1) {
+  background-color: transparent;
+  border: 2px solid var(--main-text-color);
+  color: var(--main-text-color);
+}
+.app-display-btn-card > :nth-child(2) {
+  background-color: var(--main-text-color);
+  border: none;
+  color: #fff;
+}
+
+.app-display-right {
+  width: 50%;
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.app-display-right > :nth-child(1) {
+  height: 90%;
+}
+
+.slider-app {
+  height: 300px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.slider-app > img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app-display-main {
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    padding: 0px;
+  }
+  .app-display-left {
+    width: 100%;
+  }
+  .app-display-right {
+    width: 100%;
+  }
+}

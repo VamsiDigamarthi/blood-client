@@ -1,0 +1,154 @@
+.newly-added-main-donorlist {
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+
+.selected-donor-or-blood-bank {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* color: var(--main-text-color); */
+}
+.donorlist-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 3rem;
+}
+
+.donorlist-first-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-radius-value {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.incre-decre-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 50%;
+  gap: 1rem;
+  height: 40px;
+}
+.incre-decre-main > :nth-child(1) {
+  background-color: green;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.incre-decre-main > :nth-child(2) {
+  height: 100%;
+
+  padding: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.incre-decre-main > :nth-child(3) {
+  background-color: red;
+  height: 100%;
+
+  padding: 10px;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.donor-single-card-main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* justify-content: center;
+  align-items: center; */
+  /* border: 2px solid red; */
+}
+
+.donors-single-card {
+  width: 30%;
+  /* border: 2px solid red; */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.donors-single-card > :nth-child(1) {
+  color: lightslategrey;
+}
+
+.donors-single-card > span > span {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "san sarife";
+}
+
+.donor-single-card-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+@media (max-width: 768px) {
+  .donorlist-first-card {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .donorlist-first-card > :nth-child(1) {
+    width: 100%;
+  }
+  .donors-single-card {
+    width: 100%;
+  }
+
+  .select-radius-value {
+    width: 100%;
+  }
+  .incre-decre-main {
+    width: 100%;
+  }
+}
+
+.blood-bank-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .blood-bank-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

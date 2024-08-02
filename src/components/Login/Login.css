@@ -1,0 +1,40 @@
+.login-main {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.login-main > input {
+  width: 50%;
+  height: 40px;
+  border: 2px solid lightslategrey;
+  padding: 0px 10px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.login-main > button {
+  width: 50%;
+  height: 40px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: var(--main-text-color);
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login-main > input {
+    width: 100%;
+  }
+  .login-main > button {
+    width: 100%;
+  }
+}

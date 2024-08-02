@@ -1,0 +1,443 @@
+.blood-bank-add-remove-main-card {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-banks-show-patinets {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 4px 2px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.edit-banks-show-patinets span {
+  padding: 20px;
+}
+.edit-banks-show-patinets span[data-active='true'] {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-bottom: 3px solid orangered;
+  cursor: pointer;
+}
+
+.blood-banks-todo {
+  width: 60%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: rgba(100, 100, 100, 0.25) 0px 2px 4px 2px;
+  border-radius: 8px;
+}
+
+.blood-main-todo {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.single-todo {
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.single-todo img {
+  width: 2.5rem;
+}
+
+.single-todo-blood-group-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.single-todo-blood-group-name span:nth-child(1) {
+  color: var(--main-text-color);
+  font-size: 20px;
+}
+
+.single-todo-blood-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.5rem;
+  width: fit-content;
+  max-width: 84px;
+  min-width: 84px;
+}
+
+.edit-banks-show-patinets > span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.show-patinet-to-blood-banks {
+  width: 60%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.blood-bank-patinet-list-first-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.single-todo-edit-icon {
+  cursor: pointer;
+}
+
+.add-patinet-distacnce-card {
+  border-radius: 6px;
+  width: max-content;
+  user-select: none;
+}
+
+.add-patinet-distacnce-card span:nth-child(1),
+.add-patinet-distacnce-card span:nth-child(3) {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.add-patinet-distacnce-card span:nth-child(2) {
+  width: fit-content;
+}
+
+.add-patinet-distacnce-card-select-field {
+  padding: 0px 12px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.all-patinets-details-added {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  /* padding: 20px; */
+  /* height: 700px; */
+}
+
+.single-patinet-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  width: 300px;
+  height: fit-content;
+}
+
+.no-patinet-details {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.no-patinet-details > :nth-child(3) {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Blood-bank-Edit-Business-Information-Section-close-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.bloodbankEditCursorStyle {
+  cursor: pointer;
+}
+
+.Blood-bank-Edit-Business-Information {
+  display: none;
+}
+
+.Blood-bank-Edit-Business-Information.openBusinessInformation {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 12;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.Blood-bank-Edit-Business-Information-Section-Container {
+  position: relative;
+  width: 60vw;
+  height: 75vh;
+  margin: auto;
+  background-color: #dee2ee;
+  border-radius: 0.5rem;
+  overflow: scroll;
+}
+
+.Blood-bank-Edit-Business-Information-Section-header {
+  display: flex;
+  position: sticky;
+  height: 56px;
+  top: 0;
+  background-color: #dee2ee;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 4px 4px -2px rgb(from var(--main-text-color) r g b / 25%);
+}
+
+.Blood-bank-Edit-Business-Information-Section-header-right {
+  display: flex;
+  gap: calc(100vw * 0.02);
+}
+
+.Blood-bank-Edit-Business-Information-Section-header-right
+  button[type='Submit'] {
+  width: 100px;
+  height: 40px;
+  background-color: var(--main-text-color);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Blood-bank-Edit-Business-Information-Section-header p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 1.5rem;
+}
+
+.Blood-bank-Edit-Business-Information-Section-body {
+  width: 100%;
+  height: calc(100% - 10%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.5rem;
+  overflow: scroll;
+}
+
+.Blood-bank-Edit-Business-Information-Section-body-inner-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid #d5dfff;
+}
+
+.inputTimeOptionsChecker {
+  display: flex;
+  gap: 2rem;
+}
+
+.inputTimeOptionsChecker span {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputTimeOptionsChecker span input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+}
+
+.inputTimeSetter {
+  display: flex;
+  gap: 1rem;
+}
+
+.inputTimeSetter input[type='time'] {
+  font-size: 15px;
+  outline: 1px solid #92afff;
+  border: none;
+  background-color: #ecf1ff;
+  padding: 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #92afff;
+  box-shadow: 0px 0px 4px 1px #92afff;
+}
+
+.bloodQuantityDataEditContainer {
+  display: none;
+}
+
+.bloodQuantityDataEditContainer.isBloodQuantityEditting {
+  display: block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 12;
+  display: flex;
+}
+
+.bloodQuantityDataEditContainer-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bloodQuantityDataEditContainer-header span:nth-child(2) {
+  color: var(--main-text-color);
+  font-size: 24px;
+}
+
+.bloodQuantityDataEditContainerSection {
+  position: relative;
+  width: 32vw;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: scroll;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.bloodQuantityDataEditContainerInputFields {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.bloodQuantityDataEditContainerInputFields input[type='number'] {
+  width: 140px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid rgb(255, 0, 0);
+  box-shadow: 0px 0px 4px 0px rgba(255, 0, 0, 0.5);
+  appearance: none;
+}
+
+.bloodQuantityDataEditContainer-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bloodQuantityDataEditContainer-body button {
+  color: #fff;
+  font-size: 14px;
+  padding: 0.5rem 2.5rem;
+  border: 2px solid var(--main-text-color);
+  width: fit-content;
+  border-radius: 0.5rem;
+  background-color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.bloodQuantityDataEditContainerSectionCloseButton {
+  position: absolute;
+  right: 2rem;
+}
+
+@media (max-width: 1208px) {
+  .blood-banks-todo {
+    width: 100%;
+  }
+
+  .edit-banks-show-patinets {
+    width: 100%;
+  }
+
+  .bloodbankEditCursorStyle {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .Blood-bank-Edit-Business-Information-Section-body {
+    width: 100%;
+    height: calc(100% - 10%);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 1.5rem;
+    overflow: scroll;
+  }
+
+  .Blood-bank-Edit-Business-Information-Section-Container {
+    width: 92%;
+  }
+
+  .Blood-bank-Edit-Business-Information-Section-body {
+    gap: 1.5rem;
+  }
+
+  .show-patinet-to-blood-banks {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .blood-bank-patinet-list-first-card {
+    gap: 1.5rem;
+    border-bottom: 1px solid #d5dfff;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .blood-bank-patinet-list-first-card:nth-child(1) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bloodQuantityDataEditContainerSection {
+    position: relative;
+    width: 86vw;
+  }
+}

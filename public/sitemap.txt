@@ -1,0 +1,6 @@
+/registor
+/whoweare
+/howwehelp
+/contact
+/temsconditions
+/policy

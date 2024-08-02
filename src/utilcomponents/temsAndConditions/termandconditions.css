@@ -1,0 +1,17 @@
+.terms-and-conditions-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 50px;
+}
+.terms-and-conditions-main > p {
+  line-height: 2;
+}
+.terms-and-conditions-main > p > span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.terms-and-conditions-main > ul {
+  margin-left: 40px;
+  line-height: 2;
+}

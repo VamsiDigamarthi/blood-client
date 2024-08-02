@@ -1,0 +1,10 @@
+.cursor-blur {
+  position: absolute;
+  width: 100px; /* Width of the blur effect */
+  height: 100px; /* Height of the blur effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background color */
+  backdrop-filter: blur(10px); /* Blur effect */
+  pointer-events: none; /* Ensure it doesn't interfere with other elements */
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it is above other elements */
+}

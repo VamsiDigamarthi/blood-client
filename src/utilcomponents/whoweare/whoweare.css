@@ -1,0 +1,108 @@
+.whoweare-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.passionte-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.passionte-card > p {
+  color: var(--sub-para-color);
+  line-height: 1.8;
+}
+
+.nbb-mission-card {
+  padding: 30px;
+  display: flex;
+  gap: 2rem;
+}
+
+.nbb-mission-inner-card {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 2;
+}
+.nbb-mission-inner-card > p {
+  color: var(--sub-para-color);
+}
+.nbb-mission-inner-card > :nth-child(3) {
+  line-height: 1.8;
+}
+
+.nbb-mission-inner-card > ul {
+  line-height: 1.8;
+}
+.nbb-mission-inner-card > ul > li {
+  margin-left: 30px;
+}
+
+.nbb-mission-card > img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.whowe-last-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 30px;
+}
+
+.whowe-last-sec > p {
+  color: var(--sub-para-color);
+  line-height: 1.8;
+}
+
+.whowe-last-sec > ul {
+  line-height: 1.8;
+}
+.whowe-last-sec > ul > li {
+  margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .nbb-mission-card {
+    flex-wrap: wrap-reverse;
+  }
+
+  .passionte-card > p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .nbb-mission-inner-card {
+    width: 100%;
+  }
+  .nbb-mission-inner-card > h3 {
+    font-size: 28px;
+  }
+  .nbb-mission-inner-card > p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .nbb-mission-card > img {
+    width: 40%;
+    border-radius: 10px;
+    flex-grow: 1;
+  }
+  .nbb-mission-inner-card > ul {
+    font-size: 22px;
+  }
+  .whowe-last-sec > h3 {
+    font-size: 28px;
+  }
+  .whowe-last-sec > ul {
+    font-size: 22px;
+  }
+  .whowe-last-sec > p {
+    font-size: 22px;
+  }
+}

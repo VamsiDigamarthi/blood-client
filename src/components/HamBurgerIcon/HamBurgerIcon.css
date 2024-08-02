@@ -1,0 +1,49 @@
+
+.HamBurgerIcon {
+	
+	position: relative;
+	cursor: pointer;
+	width: 2rem;
+	height: 1.75rem;
+    transform: rotate(180deg);
+	display: flex;
+	color : var(--primary);		
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.HamBurgerIcon span {
+	height: 0.25rem;
+	content: "";
+	border-radius: 1rem;
+	transition: 300ms;
+
+}
+
+.HamBurgerIcon span:nth-child(1),
+.HamBurgerIcon span:nth-child(3) {
+	background-color: var(--primary);
+	width: 2rem;
+}
+.HamBurgerIcon span:nth-child(2) {
+	background-color: var(--primary);
+	width: 1rem;
+}
+
+.HamBurgerIcon.active span:nth-child(2) {	
+	width: 0;
+}
+
+.HamBurgerIcon.active span:nth-child(1) {
+	transform: rotate(45deg);
+	transform-origin: 0;
+	width: 2.15rem ;	
+}
+
+.HamBurgerIcon.active span:nth-child(3) {
+	transform: rotate(-45deg);
+	transform-origin: 0;
+	width: 2.15rem;
+}
+
